@@ -9,7 +9,7 @@ from helpers.bot import get_dispatcher
 
 app = Flask(__name__)
 api = Blueprint("serverless_handler", __name__)
-bot = Bot(os.environ["1945046163:AAFzrfwru2JqVCB4y57fovS6_bS5Oktk5RQ"])
+bot = Bot(os.environ[""BOT_TOKEN""])
 app.config["tg_bot"] = bot
 app.config["tg_dispatcher"] = get_dispatcher(bot)
 logger = logging.getLogger(__name__)
